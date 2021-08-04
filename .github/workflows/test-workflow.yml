@@ -40,7 +40,10 @@ jobs:
         
       - name: List all files & directories
         run: ls -al
-        
+
+      - name: List docker images
+        run: docker image ls
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
