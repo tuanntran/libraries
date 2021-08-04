@@ -26,19 +26,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+      - name: show OS information
+        run: lsb_release -a 
+
       - name: run whoami command
         run: whoami
 
-      # Runs a single command using the runners shell
       - name: run hostname command
         run: hostname
 
-      # Runs a single command using the runners shell
       - name: show current directory
         run: pwd
         
-      # Runs a single command using the runners shell
       - name: List all files & directories
         run: ls -al
         
